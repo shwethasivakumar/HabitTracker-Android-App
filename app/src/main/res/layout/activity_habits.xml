@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bght4"
+    tools:context=".habits">
+    <LinearLayout
+        android:id="@+id/llb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_weight="1"
+            android:foregroundGravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/arsenal_bold"
+            android:text="Choose your habits"
+            android:textColor="@color/ivory"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/clist"
+            android:orientation="horizontal">
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/prof"
+                android:layout_width="180dp"
+                android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="MY PROFILE"
+                android:layout_weight="1"
+
+                android:textColor="@color/coral"
+                android:backgroundTint="@color/ivory"
+                app:iconTint="@color/ivory"
+                android:drawableLeft="@drawable/ic_action_prof"
+                />
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="180dp"
+                android:paddingLeft="23dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="New Habit"
+                android:textColor="@color/coral"
+                android:backgroundTint="#FFFFF0"
+                app:iconTint="#FFFFF0"
+                app:icon="@drawable/ic_baseline_add_circle_24"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/defhabits"
+        android:layout_below="@+id/tv">
+
+        <!-- Media -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:background="#FFFFF0"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <!-- Title, secondary and supporting text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+
+                    android:id="@+id/t1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Drink Water!"
+                    android:clickable="true"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:text="Drink your way to better health."
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <Button
+                    android:layout_margin="8dp"
+                    android:id="@+id/hb1"
+                    android:textSize="10sp"
+                    android:layout_width="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="START ACTIVITY!"
+                    android:background="@drawable/habitbuttonn"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/ivory"
+                    android:layout_marginTop="24dp"
+                    android:layout_height="38dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:background="#FFFFF0"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Morning Exercise"
+                    android:clickable="true"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="To enjoy the glow of good health."
+                    android:clickable="true"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary" />
+                </LinearLayout>
+                <Button
+                    android:layout_margin="8dp"
+                    android:id="@+id/hb2"
+                    android:textSize="10sp"
+                    android:layout_width="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="START ACTIVITY!"
+                    android:background="@drawable/habitbuttonn"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/ivory"
+                    android:layout_marginTop="24dp"
+                    android:layout_height="38dp" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:background="#FFFFF0"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Meditate"
+                    android:clickable="true"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Quiet the mind,and the soul will speak"
+                    android:clickable="true"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary"
+
+                    />
+                </LinearLayout>
+                <Button
+                    android:layout_margin="8dp"
+                    android:id="@+id/hb3"
+                    android:textSize="10sp"
+                    android:layout_width="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="START ACTIVITY!"
+                    android:background="@drawable/habitbuttonn"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/ivory"
+                    android:layout_marginTop="24dp"
+                    android:layout_height="38dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="100dp"
+                android:background="#FFFFF0"
+                android:orientation="horizontal"
+
+                android:padding="16dp">
+
+                <!-- Title, secondary and supporting text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reading"
+                    android:clickable="true"
+
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    />
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Reading is dreaming with open eyes."
+                    android:clickable="true"
+
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary"
+                    />
+                </LinearLayout>
+                <Button
+                    android:layout_margin="8dp"
+                    android:id="@+id/hb4"
+                    android:textSize="10sp"
+                    android:layout_width="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="START ACTIVITY!"
+                    android:layout_weight="3"
+                    android:background="@drawable/habitbuttonn"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/ivory"
+                    android:layout_marginTop="24dp"
+                    android:layout_height="38dp" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/clist"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>

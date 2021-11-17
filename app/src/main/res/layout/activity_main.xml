@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/sunrise"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bilbo_swash_caps"
+        android:gravity="center"
+        android:text="Welcome!"
+        android:id="@+id/wel"
+        android:textColor="@color/ivory"
+        android:layout_marginBottom="100dp"
+        android:textSize="70sp" />
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/fadehome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wel"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/copse"
+        android:gravity="center"
+        android:textColor="@color/ivory"
+        android:textSize="25sp"
+        app:texts="@array/homepage"
+        app:timeout="2000"
+        android:layout_marginBottom="100dp"
+        tools:ignore="MissingClass" />
+
+
+    <Button
+
+        android:id="@+id/homebut"
+        android:layout_width="250dp"
+        android:layout_below="@id/fadehome"
+        android:layout_centerHorizontal="true"
+        android:text="GET STARTED!"
+        android:background="@drawable/homebutton"
+        app:backgroundTint="@null"
+        android:textColor="@color/coral"
+        android:textSize="20sp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

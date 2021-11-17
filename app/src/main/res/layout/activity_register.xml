@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:background="@drawable/loginbg"
+    >
+
+
+    <TextView
+        android:id="@+id/logintv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editTextTextEmailAddress"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Create an Account"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="40dp" />
+    <EditText
+        android:id="@+id/editTextTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logintv"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/username_va"
+        android:ems="10"
+        android:hint="Username"
+       />
+
+
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:drawableLeft="@drawable/ic_action_usr"
+        android:layout_centerInParent="true"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextTextEmailAddress"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_action_pwd"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/lgn"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/coral"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="25dp"
+        android:elevation="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextTextPassword">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lgnbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="REGISTER"
+            android:background="@color/coral"
+            android:textColor="@color/ivory" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lgn"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/already"
+            android:text="If already registered,"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/redirect"
+            android:clickable="true"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/coral"/>
+    </LinearLayout>
+</RelativeLayout>

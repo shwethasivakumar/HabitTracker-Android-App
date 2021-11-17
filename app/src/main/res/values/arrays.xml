@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="homepage">
+        <item>Want to have consistency in your life?</item>
+        <item>Always had trouble keeping up with routines? </item>
+        <item>We offer a little support to keep your life on track !</item>
+    </string-array>
+</resources>

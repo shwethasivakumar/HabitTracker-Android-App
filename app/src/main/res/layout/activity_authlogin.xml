@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lb"
+    tools:context=".authlogin">
+
+    <TextView
+        android:id="@+id/logintv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editTextTextEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="LOGIN"
+        android:textColor="#715F50"
+        android:textFontWeight="700"
+        android:textSize="40dp" />
+
+
+
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:drawableLeft="@drawable/ic_action_usr"
+        android:layout_centerInParent="true"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextTextEmailAddress"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_action_pwd"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/lgn"
+        android:clickable="true"
+        app:cardBackgroundColor="#715F50"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="25dp"
+        android:elevation="10dp"
+        android:layout_margin="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextTextPassword">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lgnbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="LOGIN"
+                android:background="#715F50"
+                android:textColor="@color/ivory" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

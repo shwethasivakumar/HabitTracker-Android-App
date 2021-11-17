@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/defhabits"
+    android:layout_below="@+id/tv">
+
+    <!-- Media -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:background="#FFFFF0"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <!-- Title, secondary and supporting text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+
+                    android:id="@+id/ti"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Drink Water!"
+                    android:clickable="true"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:id="@+id/sti"
+                    android:text="Drink your way to better health."
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?android:attr/textColorSecondary" />
+            </LinearLayout>
+            <Button
+                android:layout_margin="8dp"
+                android:id="@+id/hb"
+                android:textSize="8sp"
+                android:layout_width="130dp"
+                android:layout_centerHorizontal="true"
+                android:text="START CUSTOM ACTIVITY!"
+                android:background="@drawable/habitbuttonn"
+                android:textColor="@color/ivory"
+                android:layout_marginTop="24dp"
+                android:layout_height="38dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
+

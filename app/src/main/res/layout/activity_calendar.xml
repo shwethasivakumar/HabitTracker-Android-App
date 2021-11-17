@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4C4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT THE DATES"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/d1"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold" />
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:layout_centerInParent="true"
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lin"
+        android:layout_below="@+id/calendar">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calendar"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:onClick="displayDates"
+            android:text="SAVE" />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/back"
+            android:text="BACK" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/com"/>
+        <Button
+            android:id="@+id/check"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="21dp"
+            android:text="CHECK" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
